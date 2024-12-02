@@ -21,7 +21,7 @@ func absDiff(a, b int) int {
 // Reads the input file and parses the numbers into two slices
 func readFileAndParse(fileName string) ([]int, []int, error) {
 	var leftNums, rightNums []int
-	file, err := os.Open("input.txt")
+	file, err := os.Open(fileName)
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 	}
