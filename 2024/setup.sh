@@ -20,6 +20,7 @@ DAY_PADDED=$(printf "%02d" $DAY)
 
 ATTEMPT_DIR=day${DAY_PADDED}/attempt${ATTEMPT}
 mkdir -p ${ATTEMPT_DIR}
+touch ${ATTEMPT_DIR}/sample.txt
 
 if [ "$LANG" == "go" ]; then
   cat <<EOF >${ATTEMPT_DIR}/main.go
